@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>JIDE MATH - Premium Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <!-- Header with App Name and Menu -->
+        <div class="header">
+            <div class="app-title">
+                <span class="app-icon">✦</span>
+                <h1>JIDE MATH</h1>
+            </div>
+            <div class="menu-icon" id="menuBtn">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <!-- Side Menu (Recent Calculations) -->
+        <div class="side-menu" id="sideMenu">
+            <div class="menu-header">
+                <h3>Recent Calculations</h3>
+                <button class="clear-recent" id="clearRecentBtn">Clear All</button>
+            </div>
+            <div class="recent-list" id="recentList">
+                <div class="empty-recent">No recent calculations</div>
+            </div>
+        </div>
+
+        <!-- Overlay for menu -->
+        <div class="overlay" id="overlay"></div>
+
+        <!-- Calculator Display -->
+        <div class="calculator">
+            <div class="display-section">
+                <div class="expression" id="expression"></div>
+                <div class="result" id="result">0</div>
+            </div>
+
+            <!-- Calculator Buttons -->
+            <div class="buttons">
+                <button class="btn btn-clear" data-action="clear">AC</button>
+                <button class="btn btn-clear" data-action="delete">⌫</button>
+                <button class="btn btn-operator" data-op="%">%</button>
+                <button class="btn btn-operator" data-op="/">÷</button>
+
+                <button class="btn btn-number" data-num="7">7</button>
+                <button class="btn btn-number" data-num="8">8</button>
+                <button class="btn btn-number" data-num="9">9</button>
+                <button class="btn btn-operator" data-op="*">×</button>
+
+                <button class="btn btn-number" data-num="4">4</button>
+                <button class="btn btn-number" data-num="5">5</button>
+                <button class="btn btn-number" data-num="6">6</button>
+                <button class="btn btn-operator" data-op="-">−</button>
+
+                <button class="btn btn-number" data-num="1">1</button>
+                <button class="btn btn-number" data-num="2">2</button>
+                <button class="btn btn-number" data-num="3">3</button>
+                <button class="btn btn-operator" data-op="+">+</button>
+
+                <button class="btn btn-number zero" data-num="0">0</button>
+                <button class="btn btn-number" data-num=".">.</button>
+                <button class="btn btn-equals" data-action="equals">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
